@@ -12655,30 +12655,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\romo1\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\jovany.SIMPLEFUSION\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\romo1\\Downloads\\repo\\TheDeepOTools\\TheDeepOTools.csproj",
+      "projectUniqueName": "\\\\SRV-SMB001\\RedirectedFolders$\\jovany\\Documents\\GitHub\\TheDeepOToolsIdentity\\TheDeepOTools.csproj",
       "projectName": "TheDeepOTools",
-      "projectPath": "C:\\Users\\romo1\\Downloads\\repo\\TheDeepOTools\\TheDeepOTools.csproj",
-      "packagesPath": "C:\\Users\\romo1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\romo1\\Downloads\\repo\\TheDeepOTools\\obj\\",
+      "projectPath": "\\\\SRV-SMB001\\RedirectedFolders$\\jovany\\Documents\\GitHub\\TheDeepOToolsIdentity\\TheDeepOTools.csproj",
+      "packagesPath": "C:\\Users\\jovany.SIMPLEFUSION\\.nuget\\packages\\",
+      "outputPath": "\\\\SRV-SMB001\\RedirectedFolders$\\jovany\\Documents\\GitHub\\TheDeepOToolsIdentity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\romo1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\jovany.SIMPLEFUSION\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -12777,7 +12771,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

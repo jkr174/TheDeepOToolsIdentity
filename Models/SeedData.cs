@@ -18,28 +18,6 @@ namespace TheDeepOTools.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<TheDeepOToolsContext>>()))
             {
-                if (context.RepairTicket.Any())
-                {
-                    return;
-                }
-                context.RepairTicket.AddRange(
-                    new RepairTicket
-                    {
-                        Title = "TitleTest1",
-                        Description = "DescTest1",
-                        TicketState = "Open",
-                        OwnerId = "UserTest1"
-                    },
-                    new RepairTicket
-                    {
-                        Title = "TitleTest2",
-                        Description = "DescTest2",
-                        TicketState = "Closed",
-                        OwnerId = "UserTest2"
-                    }
-                    );
-                context.SaveChanges();
-                
                 if (context.Inventory.Any())
                 {
                     return;

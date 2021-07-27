@@ -12,10 +12,11 @@ namespace TheDeepOTools.Models
         [Key]
         public Guid Id { get; set; }
         public String Message { get; set; }
+        public string Notes { get; set; }
 
         public Guid TicketId { get; set; }
         public RepairTicket Ticket { get; set; }
         public String OwnerId { get; set; }
-        public ApplicationUser Owner { get; set; }
+        public string Owner { get; set; }
     }
 }

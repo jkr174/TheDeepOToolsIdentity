@@ -1,0 +1,11 @@
+
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTickets/Index.cshtml.g.cs
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTickets/Edit.cshtml.g.cs
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTickets/Details.cshtml.g.cs
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTickets/Delete.cshtml.g.cs
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTickets/Create.cshtml.g.cs
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTicketMessages/Index.cshtml.g.cs
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTicketMessages/Edit.cshtml.g.cs
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTicketMessages/Details.cshtml.g.cs
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTicketMessages/Delete.cshtml.g.cs
+obj/Debug/netcoreapp2.1/Razor/Views/RepairTicketMessages/Create.cshtml.g.cs

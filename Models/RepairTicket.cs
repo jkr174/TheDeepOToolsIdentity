@@ -36,7 +36,7 @@ namespace TheDeepOTools.Models
         }
         public string TicketState { get; set; }
         public string OwnerId { get; set; }
-        public ApplicationUser Owner { get; set; }
+        public string Owner { get; set; }
         public IEnumerable<RepairTicketMessage> Messages { get; set; }
     }
 }
