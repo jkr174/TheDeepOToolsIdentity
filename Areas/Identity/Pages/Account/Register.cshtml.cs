@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using TheDeepOTools.Areas.Identity.Data;
+using TheDeepOTools.Models;
 
 namespace TheDeepOTools.Areas.Identity.Pages.Account
 {
@@ -42,7 +42,7 @@ namespace TheDeepOTools.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [Display(Name ="First Name")]
+            [Display(Name = "First Name")]
             public string FirstName { get; set; }
             [Required]
             [Display(Name = "Last Name")]
@@ -77,10 +77,9 @@ namespace TheDeepOTools.Areas.Identity.Pages.Account
             {
                 MailAddress address = new MailAddress(Input.Email);
                 string userName = address.User;
-
                 var user = new ApplicationUser 
                 { 
-                    UserName = userName,
+                    UserName = userName, 
                     Email = Input.Email,
                     FirstName = Input.FirstName,
                     LastName = Input.LastName

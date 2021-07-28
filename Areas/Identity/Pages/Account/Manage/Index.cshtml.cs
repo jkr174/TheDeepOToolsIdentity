@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using TheDeepOTools.Areas.Identity.Data;
+using TheDeepOTools.Models;
 
 namespace TheDeepOTools.Areas.Identity.Pages.Account.Manage
 {
@@ -40,6 +40,12 @@ namespace TheDeepOTools.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
+            [Display(Name ="First Name")]
+            public string FirstName { get; set; }
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
+            [Display(Name = "Username")]
+            public string Username { get; set; }
             [Required]
             [EmailAddress]
             public string Email { get; set; }
@@ -47,6 +53,8 @@ namespace TheDeepOTools.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+            [Display(Name = "Profile Picture")]
+            public byte[] ProfilePicture { get; set; }
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -76,6 +84,8 @@ namespace TheDeepOTools.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPostAsync()
         {
+            
+
             if (!ModelState.IsValid)
             {
                 return Page();
@@ -86,7 +96,19 @@ namespace TheDeepOTools.Areas.Identity.Pages.Account.Manage
             {
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
+            var firstName = user.FirstName;
+            var lastName = user.LastName;
 
+            if(Input.FirstName != firstName)
+            {
+                user.FirstName = Input.FirstName;
+                await _userManager.UpdateAsync(user);
+            }
+            if(Input.LastName != lastName)
+            {
+                user.LastName = Input.LastName;
+                await _userManager.UpdateAsync(user);
+            }
             var email = await _userManager.GetEmailAsync(user);
             if (Input.Email != email)
             {
@@ -143,6 +165,23 @@ namespace TheDeepOTools.Areas.Identity.Pages.Account.Manage
 
             StatusMessage = "Verification email sent. Please check your email.";
             return RedirectToPage();
+        }
+        private async Task LoadAsync(ApplicationUser user)
+        {
+            var userName = await _userManager.GetUserNameAsync(user);
+            var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+            var firstName = user.FirstName;
+            var lastName = user.LastName;
+            var profilePicture = user.ProfilePicture;
+            Username = userName;
+            Input = new InputModel
+            {
+                PhoneNumber = phoneNumber,
+                Username = userName,
+                FirstName = firstName,
+                LastName = lastName,
+                ProfilePicture = profilePicture
+            };
         }
     }
 }

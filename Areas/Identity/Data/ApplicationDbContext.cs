@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using TheDeepOTools.Areas.Identity.Data;
 using TheDeepOTools.Models;
 
 namespace TheDeepOTools.Data
@@ -21,7 +20,7 @@ namespace TheDeepOTools.Data
         {
             base.OnModelCreating(builder);
             builder.HasDefaultSchema("Identity");
-            builder.Entity<IdentityUser>(entity =>
+            builder.Entity<ApplicationUser>(entity =>
             {
                 entity.ToTable(name: "User");
             });

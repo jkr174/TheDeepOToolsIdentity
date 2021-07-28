@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using TheDeepOTools.Areas.Identity.Data;
+using TheDeepOTools.Models;
 
 namespace TheDeepOTools.Areas.Identity.Pages.Account
 {

@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TheDeepOTools.Areas.Identity.Data;
 using TheDeepOTools.Data;
 
 [assembly: HostingStartup(typeof(TheDeepOTools.Areas.Identity.IdentityHostingStartup))]
@@ -20,7 +19,7 @@ namespace TheDeepOTools.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("ApplicationDbContextConnection")));
 
-                /*services.AddDefaultIdentity<ApplicationUser>()
+                /*services.AddDefaultIdentity<IdentityUser>()
                     .AddEntityFrameworkStores<ApplicationDbContext>();*/
             });
         }

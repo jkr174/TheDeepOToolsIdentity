@@ -12655,23 +12655,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jovany.SIMPLEFUSION\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jromo021627\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\SRV-SMB001\\RedirectedFolders$\\jovany\\Documents\\GitHub\\TheDeepOToolsIdentity\\TheDeepOTools.csproj",
+      "projectUniqueName": "C:\\Users\\jromo021627\\Downloads\\TheDeepOTools\\TheDeepOTools\\TheDeepOTools.csproj",
       "projectName": "TheDeepOTools",
-      "projectPath": "\\\\SRV-SMB001\\RedirectedFolders$\\jovany\\Documents\\GitHub\\TheDeepOToolsIdentity\\TheDeepOTools.csproj",
-      "packagesPath": "C:\\Users\\jovany.SIMPLEFUSION\\.nuget\\packages\\",
-      "outputPath": "\\\\SRV-SMB001\\RedirectedFolders$\\jovany\\Documents\\GitHub\\TheDeepOToolsIdentity\\obj\\",
+      "projectPath": "C:\\Users\\jromo021627\\Downloads\\TheDeepOTools\\TheDeepOTools\\TheDeepOTools.csproj",
+      "packagesPath": "C:\\Users\\jromo021627\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jromo021627\\Downloads\\TheDeepOTools\\TheDeepOTools\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jovany.SIMPLEFUSION\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jromo021627\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12771,7 +12767,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

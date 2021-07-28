@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using TheDeepOTools.Areas.Identity.Data;
+using TheDeepOTools.Models;
 
 namespace TheDeepOTools.Areas.Identity.Pages.Account
 {
